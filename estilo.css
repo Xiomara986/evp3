@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,7,12,0.4),rgba(5,7,12,0.4)),
+    url(imagenes/Fondo.png);
+    background-size: cover;
+    color: white;
+}
+#contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+#nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 20;
+    border: 1px solid rgb(255, 255, 255);
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.menu li{
+    padding: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+.menu li a:hover{
+    opacity: 1;
+    background-color: #2a8e4077;
+    border-radius: 50px;
+}
+
+.redes{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.redes li a{
+    padding: 5px;
+}
+.redes li a img{
+    filter: invert(100%);
+}
+.redes li a:hover{
+    opacity: 0.8;
+    
+}
+h1{
+    font-size: 100px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+h3{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px;
+}
+h2{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+
+/*Blog*/
+#shop{
+    width: 70%;
+    margin: auto;
+    height: 2500px;
+}
+#shop nav{
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+}
+#shop nav ul a{
+    color: #2a8e40d8;
+    font-weight: 500;
+
+}
+#shop nav ul a:hover{
+    color: white;
+}
+#shop nav h1{
+    text-align: center;
+    align-content: center;
+}
+#bob{
+    border-bottom: 2px solid #F4B3AF;
+}
+#contenido{
+    padding: 10px;
+}
+#principal img{
+    width: 100%;
+    padding: 10px ;
+}
+#shop .redes li a img{
+    filter: invert(0);
+}
+h1 a{
+    color: rgb(42, 142, 64);
+    text-decoration: none;
+}
+h1 a:hover{
+    opacity: 50%;
+}
+#vaso{
+    float: left;
+    margin: 10px;
+    border-radius: 20px;
+}
+#tapioca{
+    float: right;
+    margin: 10px;
+    border-radius: 20px;
+}
+#foto{
+    width: 50px;
+    border-radius: 50%;
+}
+figure{
+    float: right;
+    text-align: center;
+    font-size: 0.8sem;
+}
+#contenido p, .dos p, .seis p{
+    text-align: justify;
+    padding: 20px;
+    color: gray;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+#contenido h2, .dos h2{
+    font-size: 25px;
+    text-align: center;
+}
+#contenido h3, .dos h3{
+    color: #2a8e40;
+    font-weight: 550;
+}
+figcaption{
+    font-family:"Montserrat", sans-serif;
+    font-size: 13px;
+    color: #2a8e40;
+    font-weight: 450;
+}
+
+/*Nosotros*/
+
+ #nosotros1{
+    display: grid;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 960px;
+    grid-template-areas: "uno uno uno"
+                        "dos dos cinco"
+                        "tres cuatro cinco"
+                        "seis seis seis";
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Montserrat", sans-serif;   
+}
+
+.caja{
+    width: 100%;
+
+    align-content: center;
+    text-align: center;
+}
+.uno{
+    background-color: rgba(0, 128, 0, 0.842);
+    border-radius: 50px;
+    grid-area: uno;
+    height: 100px;
+    color: white;
+    
+}
+.uno h2{
+    font-size: 25px;
+}
+.dos{
+    background-color: rgb(228, 252, 228);
+    border-radius: 50px;
+    grid-area: dos;
+    height: 400px;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+}
+#mision p, #vision p, #propuesta p{
+    text-align: left;
+}
+.tres{
+    background-color: rgb(255, 255, 255);
+    grid-area: tres;
+    
+}
+.cuatro{
+    background-color: rgb(255, 255, 255);
+    grid-area: cuatro;
+}
+.cinco{
+    background-color: rgb(255, 255, 255);
+    grid-area: cinco;
+}
+#publi img{
+    max-width: 100%;
+    border-radius: 50px;
+}
+.seis{
+    background-color: rgb(228, 252, 228);
+    border-radius: 50px;
+    grid-area: seis;
+    height: 100px;
+}
+
+/*Galeria*/
+#galeria{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+.item img{
+    width: 100%;
+    box-shadow: 5px 5px 5px #2a8e408a;
+    border-radius: 30px;
+}
+.item a:hover{
+    opacity: 0.7;
+}
+#contenido .item p{
+    text-align: center;
+    color: #2a8e40;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+/*videos*/
+.video{
+    border: 4px double #2a8e4075;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px #2a8e408a;
+    z-index: 10;
+}
+.video iframe{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+/*Contactos*/
+#contactos{
+    background: linear-gradient(to top, #2a8e40, white);
+    border-radius: 50px;  
+    display: grid;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 1100px;
+    grid-template-areas: "siete ocho"
+                        "nueve nueve";
+    gap:10px;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.caja{
+    width: 100%;
+
+    align-content: center;
+    text-align: center;
+}
+.siete{
+    
+    grid-area: siete;
+    height: 500px;
+}
+.ocho{
+    
+    grid-area: ocho;
+    height: 500px;
+}
+.nueve{
+    
+    grid-area: nueve;
+}
+
+/*cotactanos*/
+#contactomarco{
+    background-color: #2a8e40;
+    width: 400px;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 30px;
+}
+.info{
+    text-align: left;
+    
+}
+th, td{
+    padding: 20px 9px;
+    color: white;
+}
+th{
+    color: #00361d;
+}
+td{
+    text-align: center;
+}
+
+
+
+/*escribenos*/
+#escribenos{
+    background-color: #2a8e40;
+    border-radius: 30px;
+    width: 467px;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+}
+
+#escribe h3, #contactomarco h3, #mapa h3{
+    color: #00361d;
+    font-size: 25px;
+}
+#datos{
+    text-align: left;
+    color: white;
+}
+form input{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn{
+    font-family: "Montserrat", sans-serif;
+    background-color: #00361d;
+    border: transparent;
+    border-radius: 20px;
+    padding: 7px;
+    color: white;
+}
+.espacio{
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#mapa iframe{
+    border-radius: 50px;
+}
